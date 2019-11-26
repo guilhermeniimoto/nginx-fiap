@@ -1,7 +1,9 @@
 version: "3"
 services:
-  nginx:
-    image: nginx:1.17.6  
-    container_name: nginx
+  ngnix:
+    #image: grafana/grafana:5.1.0
+    build: .
+    environment: 
+      - TZ="America/Bahia"
     ports:
       - 85:80
